@@ -1,0 +1,24 @@
+---
+import '../global.css';
+import LoginForm from '../components/LoginForm.jsx';
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Acceso Admin - Colore</title>
+  </head>
+  <body class="bg-slate-50 min-h-screen flex flex-col items-center justify-center p-4">
+    
+    <div class="w-full max-w-md">
+      <a href="/" class="block text-center text-purple-600 font-bold mb-8 hover:text-purple-800 transition-colors">
+        &larr; Volver al sitio principal
+      </a>
+      
+      <!-- Inyectamos React en el cliente para que maneje la interactividad -->
+      <LoginForm client:load />
+    </div>
+
+  </body>
+</html>

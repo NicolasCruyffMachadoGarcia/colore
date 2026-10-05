@@ -1,0 +1,24 @@
+---
+import '../global.css';
+import AdminPanel from '../components/AdminPanel.jsx';
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Panel de Administración - Colore</title>
+  </head>
+  <body class="bg-slate-50 min-h-screen p-4">
+    
+    <div class="max-w-6xl mx-auto pt-6">
+      <a href="/" class="text-purple-600 font-bold hover:text-purple-800 transition-colors">
+        &larr; Ver página principal
+      </a>
+    </div>
+
+    <!-- Carga exclusiva en el cliente para validar la sesión de forma segura -->
+    <AdminPanel client:only="react" />
+
+  </body>
+</html>
